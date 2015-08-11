@@ -5,26 +5,22 @@ export const SLUG = 'hungry-house'
 export const PATH_TO_FUNC_MAP = new Map([
   ['^/takeaways', lookupAreaListings],
   ['^/', lookupRestaurantListing]
-
 ])
 
 function lookupAreaListings () {
-  let restaurants = document.querySelectorAll('.restaurantBlock .restsSearchItemRes')
-  //console.log(restaurants)
-  let map = new Map()
+  const restaurants = document.querySelectorAll('.restaurantBlock .restsSearchItemRes')
+  const map = new Map()
 
   for (var element of restaurants) {
-    let url = element.querySelector('a').getAttribute('name').replace('anchor-','')
-    console.log(url)
+    let url = element.querySelector('a').getAttribute('name').replace('anchor-', '')
     map.set(url, element)
   }
-  console.log(map)
   return map
 }
 
 function lookupRestaurantListing () {
-  let restaurant = document.querySelector('.restDetailsBox')
-  let slug = window.location.pathname 
+  const restaurant = document.querySelector('.restDetailsBox')
+  const slug = window.location.pathname.replace('/', '')
   return new Map([
     [slug, restaurant]
   ])
