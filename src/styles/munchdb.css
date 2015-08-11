@@ -1,0 +1,64 @@
+.munch-rating {
+  display: inline-block;
+  width: 120px;
+  height: 61px;
+  color: transparent; /* hide text */
+}
+
+.munch-rating-0 {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_0_en-gb.JPG');
+}
+
+.munch-rating-1 {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_1_en-gb.JPG');
+}
+
+.munch-rating-2 {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_2_en-gb.JPG');
+}
+
+.munch-rating-3 {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_3_en-gb.JPG');
+}
+
+.munch-rating-4 {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_4_en-gb.JPG');
+}
+
+.munch-rating-5 {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_5_en-gb.JPG');
+}
+
+.munch-rating-pass {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhis_pass_en-gb.JPG');
+}
+
+.munch-rating-improvement-required {
+  background: url('http://ratings.food.gov.uk/images/scores/small/fhis_improvement_required_en-gb.JPG');
+}
+
+.munch-rating-not-found {
+  background: url('http://www.duneguide.com/images/120x60.jpg');
+}
+
+
+/* just-eat.co.uk */
+
+.just-eat .restaurantInner .munch-rating {
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+
+.just-eat .firstRestaurant .restaurantInner .munch-rating {
+  top: 60px;
+}
+
+.restDetailsBox  .munch-rating {
+  margin: 0 20px;
+
+}
+
+
+
+/* hungryhouse.co.uk */

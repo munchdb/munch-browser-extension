@@ -1,0 +1,12 @@
+# JS
+node_modules
+
+# Build
+dist/
+tmp/
+
+# Keys
+dist.pem
+
+# OS
+.DS_Store

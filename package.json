@@ -1,0 +1,46 @@
+{
+  "name": "munchdb",
+  "version": "0.1.0",
+  "description": "Cross browser extension to display food hygiene ratings on UK takeaway websites",
+  "main": "inject.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/munchdb/munchdb-extension"
+  },
+  "author": "munchdb.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/munchdb/munchdb-extension/issues"
+  },
+  "homepage": "http://munchdb.com",
+  "devDependencies": {
+    "babel": "^5.8.12",
+    "babel-core": "^5.8.14",
+    "babel-loader": "^5.3.2",
+    "crx": "^0.4.4",
+    "event-stream": "*",
+    "firefox-profile": "~0.3.6",
+    "gulp": "^3.8.6",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "*",
+    "gulp-exit": "0.0.2",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-run": "^1.6.4",
+    "gulp-run-sequence": "*",
+    "gulp-util": "^2.2.20",
+    "gulp-zip": "^2.0.1",
+    "map-stream": "*",
+    "request": "~2.48.0",
+    "starx": "~0.1.7",
+    "stream-series": "*",
+    "underscore": "~1.7.0",
+    "underscore.string": "~2.4.0",
+    "webpack": "^1.10.5",
+    "webpack-stream": "^2.0.0"
+  }
+}

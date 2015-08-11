@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>munchdb.com</string>
+	<key>Builder Version</key>
+	<string>9537.75.14</string>
+	<key>CFBundleDisplayName</key>
+	<string>munchdb</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.munchdb.munchdb</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>0.1.0</string>
+	<key>Chrome</key>
+	<dict/>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+        <string>munchdb.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>munchdb.css</string>
+		</array>
+    <key>Whitelist</key>
+    <array>
+      <string>http://www.just-eat.co.uk/*</string>
+      <string>https://hungryhouse.co.uk/*</string>
+    </array>
+	</dict>
+	<key>Description</key>
+	<string>Display food hygiene ratings on UK takeaway websites</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>just-eat.co.uk</string>
+				<string>hungryhouse.co.uk</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+  <string>http://munchdb.com</string>
+</dict>
+</plist>
