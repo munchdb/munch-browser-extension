@@ -28,7 +28,6 @@ gulp.task('dist', ['build'], function (cb) {
  * Private tasks
  */
 
-// #TODO #LATEST CSS needs to concatenate and compile to ./tmp/munchdb.css
 gulp.task('css', function () {
   return pipe('./src/styles/**/*.css', [
     $.autoprefixer({cascade: true}),
