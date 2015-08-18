@@ -1,27 +1,46 @@
-# MunchDB Extension
+# MunchDB Browser Extension
 
-Browser extensions (Chrome, Firefox, Safari and Opera) to display food hygiene ratings from the FSA on popular UK takeaway websites.
+Get food hygiene ratings on your favourite UK takeaway websites.
 
-Currently supports the following websites:
+This extension uses the service provided by us at [MunchDB.com][MunchDB] to
+display ratings from the [Food Standards Agency][FSA] on the following
+domains:
 
-* JUSTEAT / <[just-eat.co.uk](http://www.just-eat.co.uk)>
-* Hungry House / <[hungryhouse.co.uk](https://hungryhouse.co.uk)>
+* JUSTEAT > [just-eat.co.uk][JUSTEAT]
+* Hungryhouse > [hungryhouse.co.uk][Hungryhouse]
 
-## Install on Chrome and Firefox
+It can run within the following desktop browsers:
 
-* Download and install from the [Chrome Web Store](#TODO)
+* [Google Chrome][Chrome]
+* [Mozilla Firefox][Firefox]
+* [Safari][Safari]
+* [Opera][Opera]
 
-## Install on Firefox
+# Installation instructions
 
-* Download and install from the [Mozilla Add-ons Store](#TODO)
+## Google Chrome
 
-## Install on Safari
+* Download and install from the [Chrome Web Store](#TODO).
 
-* #TODO
-* Safari: drag `safari.safariextz` to the browser and follow the instructions
-* Opera: drag `opera.nex` to the browser and follow the instructions
+## Mozilla Firefox
+
+* Download and install from the [Mozilla Add-ons Store](#TODO).
+
+## Safari
+
+Drag `safari.safariextz` to the browser and follow the instructions.
 
 ## Install on Opera
 
-* #TODO
-* Opera: drag `opera.nex` to the browser and follow the instructions
+* Opera: drag `opera.nex` to the browser and follow the instructions.
+
+[MunchDB]: https://munchdb.com "Food Hygiene ratings for JUSTEAT & Hungryhouse takeway websites"
+[FSA]: http://fsa.gov.uk "The UK's Food Standards Agency"
+
+[JUSTEAT]: http://www.just-eat.co.uk
+[Hungryhouse]: https://hungryhouse.co.uk
+
+[Chrome]: http://todo
+[Firefox]: http://todo
+[Safari]: http://todo
+[Opera]: http://todo
