@@ -1,64 +1,81 @@
 .munch-rating {
   display: inline-block;
-  width: 120px;
-  height: 61px;
+  width: 160px;
+  height: 40px;
   color: transparent; /* hide text */
+  background-size: 160px 40px;
 }
 
 .munch-rating-0 {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_0_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-0@2x.png');
 }
 
 .munch-rating-1 {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_1_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-1@2x.png');
 }
 
 .munch-rating-2 {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_2_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-2@2x.png');
 }
 
 .munch-rating-3 {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_3_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-3@2x.png');
 }
 
 .munch-rating-4 {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_4_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-4@2x.png');
 }
 
 .munch-rating-5 {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhrs_5_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-5@2x.png');
 }
 
 .munch-rating-pass {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhis_pass_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-pass@2x.png');
 }
 
 .munch-rating-improvement-required {
-  background: url('http://ratings.food.gov.uk/images/scores/small/fhis_improvement_required_en-gb.JPG');
+  background-image: url('https://munchdb.com/img/ratings/rating-improvement-required@2x.png');
 }
 
 .munch-rating-not-found {
-  background: url('http://www.duneguide.com/images/120x60.jpg');
+  background-image: url('https://munchdb.com/img/ratings/rating-not-found@2x.png');
+}
+
+.munch-rating-awaiting-inspection {
+  background-image: url('https://munchdb.com/img/ratings/rating-awaiting-inspection@2x.png');
+}
+
+.munch-rating-awaiting-publication {
+  background-image: url('https://munchdb.com/img/ratings/rating-awaiting-publication@2x.png');
+}
+
+.munch-rating-exempt {
+  background-image: url('https://munchdb.com/img/ratings/rating-exempt@2x.png');
 }
 
 
 /* just-eat.co.uk */
 
+/* For listings */
 .just-eat .restaurantInner .munch-rating {
   position: absolute;
   top: 90px;
   right: 0;
 }
 
+/* For first listing on listings */
 .just-eat .firstRestaurant .restaurantInner .munch-rating {
   top: 60px;
 }
 
-.restDetailsBox  .munch-rating {
-  margin: 0 20px;
-
+/* For restaurant pages */
+.just-eat .restaurantOverview .munch-rating {
+  margin-top: 10px;
 }
 
-
+.just-eat .restaurantOverview .details {
+  padding-bottom: 0px;
+}
 
 /* hungryhouse.co.uk */
