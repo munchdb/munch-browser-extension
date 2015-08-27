@@ -8,18 +8,18 @@ export const PATH_TO_FUNC_MAP = new Map([
 ])
 
 function lookupAreaListings () {
-  const restaurants = document.querySelectorAll('.restaurantBlock .restsSearchItemRes')
+  const restaurants = document.querySelectorAll('.restaurantBlock .restsSearchItemResBoxWrapper')
   const map = new Map()
 
   for (var element of restaurants) {
-    let url = element.querySelector('a').getAttribute('name').replace('anchor-', '')
+    let url = element.querySelector('.restPageLink').getAttribute('href').replace('/', '')
     map.set(url, element)
   }
   return map
 }
 
 function lookupRestaurantListing () {
-  const restaurant = document.querySelector('.restDetailsBox')
+  const restaurant = document.querySelector('.restBoxContent h1')
   const slug = window.location.pathname.replace('/', '')
   return new Map([
     [slug, restaurant]
