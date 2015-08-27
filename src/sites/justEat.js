@@ -9,7 +9,7 @@ export const PATH_TO_FUNC_MAP = new Map([
   ['^/restaurants', lookupRestaurantListing]
 ])
 
-const SLUG_REGEX = '/restaurants-([a-zA-Z0-9-\.]+)/'
+const SLUG_REGEX = '/restaurants-([a-zA-Z0-9-\.]+)'
 
 function lookupAreaListings () {
   const restaurants = document.querySelectorAll('.restaurant:not(.offlineRestaurant) .restaurantInner')
@@ -24,9 +24,18 @@ function lookupAreaListings () {
 }
 
 function lookupRestaurantListing () {
-  const restaurant = document.querySelector('.restaurantOverview .details')
+  let el
   const slug = extractText(window.location.pathname, SLUG_REGEX)
+  const selectors = [
+    '.restaurantOverview .details',
+    '.restaurant-info-detail',
+    '.restInfoExtras .restInfoCuisines'
+  ]
+  for (var sel of selectors) {
+    el = document.querySelector(sel)
+    if (el != null) break
+  }
   return new Map([
-    [slug, restaurant]
+    [slug, el]
   ])
 }
