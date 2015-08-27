@@ -1,20 +1,21 @@
 import {API_LOOKUP_ENDPOINT} from './constants'
 import {log} from './log'
 import {partial} from './utils/functional'
+import {chunkMap} from './utils/chunk'
 
 export function doLookup (directoryID, lookupMap, callback) {
-  let url = getLookupURL(directoryID, lookupMap)
-  callback = partial(callback, lookupMap)
-  sendRequest(url, callback)
+  const chunkedMaps = chunkMap(lookupMap, 60)
+  for (let chunkMap of chunkedMaps) {
+    let url = getLookupURL(directoryID, chunkMap.keys())
+    let partialCallback = partial(callback, chunkMap)
+    sendRequest(url, partialCallback)
+  }
 }
 
-function getLookupURL (directoryID, lookupMap) {
+function getLookupURL (directoryID, lookupKeys) {
   let url = API_LOOKUP_ENDPOINT.replace('{directoryID}', directoryID) + '?'
-  let count = 0
-  for (let key of lookupMap.keys()) {
-    if (count === 60) return url
+  for (let key of lookupKeys) {
     url += '&s[]=' + key
-    count += 1
   }
   return url
 }
