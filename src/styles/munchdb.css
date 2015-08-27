@@ -1,9 +1,9 @@
 .munch-rating {
   display: inline-block;
-  width: 160px;
-  height: 40px;
+  width: 212px;
+  height: 44px;
   color: transparent; /* hide text */
-  background-size: 160px 40px;
+  background-size: 212px 44px;
 }
 
 .munch-rating-0 {
@@ -42,10 +42,12 @@
   background-image: url('https://munchdb.com/img/ratings/rating-not-found@2x.png');
 }
 
+.munch-rating-awaitinginspection,
 .munch-rating-awaiting-inspection {
   background-image: url('https://munchdb.com/img/ratings/rating-awaiting-inspection@2x.png');
 }
 
+.munch-rating-awaitingpublication,
 .munch-rating-awaiting-publication {
   background-image: url('https://munchdb.com/img/ratings/rating-awaiting-publication@2x.png');
 }
@@ -79,3 +81,17 @@
 }
 
 /* hungryhouse.co.uk */
+
+/* For restaurant pages */
+.hungry-house .restBoxContent .munch-rating {
+  float: right;
+}
+
+/* For restaurant listing pages */
+.hungry-house .restsSearchItemResBoxWrapper {
+  overflow: hidden;
+}
+
+.hungry-house .restsSearchItemResBoxWrapper .munch-rating {
+  float: right;
+}
