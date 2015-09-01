@@ -9,7 +9,7 @@
     "16": "icons/munch-logo-small-32.png",
     "48": "icons/munch-logo-small-96.png",
     "128": "icons/munch-logo-small-256.png",
-    "256": "icons/munch-logo-small-512.png",
+    "256": "icons/munch-logo-small-512.png"
   },
   "permissions": [
     "http://api.munchdb.com/*",
