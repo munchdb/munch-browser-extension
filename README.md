@@ -12,27 +12,16 @@ domains:
 It can run within the following desktop browsers:
 
 * [Google Chrome][Chrome]
-* [Mozilla Firefox][Firefox]
-* [Safari][Safari]
-* [Opera][Opera]
+* ~~[Mozilla Firefox][Firefox]~~ (soon)
+* ~~[Safari][Safari]~~ (soon)
+* ~~[Opera][Opera]~~ (soon)
 
 # Installation instructions
 
 ## Google Chrome
 
-* Download and install from the [Chrome Web Store](#TODO).
-
-## Mozilla Firefox
-
-* Download and install from the [Mozilla Add-ons Store](#TODO).
-
-## Safari
-
-Drag `safari.safariextz` to the browser and follow the instructions.
-
-## Install on Opera
-
-* Opera: drag `opera.nex` to the browser and follow the instructions.
+* Download and install from the [Chrome Web
+  Store](https://chrome.google.com/webstore/detail/munchdb-food-hygiene-rati/diocoabnonklkkkmhchegbfjmekfjfpm).
 
 [MunchDB]: https://munchdb.com "Food Hygiene ratings for JUSTEAT & Hungryhouse takeway websites"
 [FSA]: http://fsa.gov.uk "The UK's Food Standards Agency"
