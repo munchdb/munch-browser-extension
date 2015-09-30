@@ -1,9 +1,218 @@
+/**
+ * hint.css altered to have HTML content support.
+ */
+
+.hint--html.hint:after {
+  display: none;
+  opacity: 0;
+}
+
+.hint__content {
+  background: #383838;
+  color: white;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.hint .hint__content, [data-hint] .hint__content {
+  position: absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000000;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+
+.hint:hover .hint__content,
+.hint:focus .hint__content, [data-hint]:hover .hint__content,
+[data-hint]:focus .hint__content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hint:hover .hint__content, [data-hint]:hover .hint__content {
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+
+.hint.hint--notrans:before, .hint.hint--notrans:after, [data-hint].hint--notrans:before, [data-hint].hint--notrans:after {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.hint.hint--notrans .hint__content, [data-hint].hint--notrans .hint__content {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+/**
+ * top tooltip
+ */
+.hint--top .hint__content {
+  margin-left: -18px;
+}
+
+.hint--top .hint__content {
+  bottom: 100%;
+  left: 50%;
+  left: calc(50% - 6px);
+}
+
+.hint--top .hint__content:after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 12px;
+  width: 100%;
+  opacity: 0;
+  background-color: red;
+}
+
+.hint--top:hover .hint__content, .hint--top:focus .hint__content {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/**
+ * bottom tooltip
+ */
+.hint--bottom .hint__content {
+  margin-left: -18px;
+}
+
+.hint--bottom .hint__content {
+  top: 100%;
+  left: 50%;
+  left: calc(50% - 6px);
+}
+
+.hint--bottom .hint__content:after {
+  content: ' ';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  height: 12px;
+  width: 100%;
+  opacity: 0;
+  background-color: red;
+}
+
+.hint--bottom:hover .hint__content, .hint--bottom:focus .hint__content {
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+/**
+ * right tooltip
+ */
+.hint--right .hint__content {
+  margin-bottom: -14px;
+}
+
+.hint--right .hint__content {
+  left: 100%;
+  bottom: 50%;
+}
+
+.hint--right .hint__content:after {
+  content: ' ';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  height: 100%;
+  width: 12px;
+  opacity: 0;
+  background-color: red;
+}
+
+.hint--right:hover .hint__content, .hint--right:focus .hint__content {
+  -webkit-transform: translateX(8px);
+  -moz-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+/**
+ * left tooltip
+ */
+.hint--left .hint__content {
+  margin-bottom: -14px;
+}
+
+.hint--left .hint__content {
+  right: 100%;
+  bottom: 50%;
+}
+
+.hint--left .hint__content:after {
+  content: ' ';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  width: 12px;
+  opacity: 0;
+  background-color: red;
+}
+
+.hint--left:hover .hint__content, .hint--left:focus .hint__content {
+  -webkit-transform: translateX(-8px);
+  -moz-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+/* Start MunchDB Styles */
+
 .munch-rating {
   display: inline-block;
   width: 212px;
   height: 44px;
   color: transparent; /* hide text */
   background-size: 212px 44px;
+  cursor: pointer;
+}
+
+.munch-rating-hint-wrapper {
+  position: relative;
+  width: 212px;
+  height: 44px;
+}
+
+.munch-rating .munch-rating-hint {
+  box-sizing: border-box;
+  width: 212px;
+  border-radius: 4px;
+  z-index: 999999;
+  top: 40px;
+  left: calc(50% - 88px);
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 18px;
+}
+
+.munch-rating .munch-rating-hint h4,
+.munch-rating .munch-rating-hint p {
+  margin: 0 0 2px 0;
+}
+
+.munch-rating p.munch-rating-hint-address {
+  margin: 4px 0;
+}
+
+.munch-rating .munch-rating-hint a {
+  color: #64D2BC;
 }
 
 .munch-rating-0 {
@@ -60,6 +269,7 @@
 /* just-eat.co.uk */
 
 /* For listings */
+
 .just-eat .restaurantInner .munch-rating {
   position: absolute;
   top: 90px;
@@ -81,16 +291,24 @@
 
 /* hungryhouse.co.uk */
 
-/* For restaurant pages */
-.hungry-house .restBoxContent .munch-rating {
-  float: right;
-}
-
 /* For restaurant listing pages */
-.hungry-house .restsSearchItemResBoxWrapper {
-  overflow: hidden;
+.hungry-house .restsSearchItemResBoxWrapper:after {
+  content:"";
+  display:table;
+  clear:both;
 }
 
 .hungry-house .restsSearchItemResBoxWrapper .munch-rating {
+  float: right;
+}
+
+/* For restaurant pages */
+
+.hungry-house .restMainInfoHeader,
+.hungry-house .restMainInfoHeader h1 {
+  overflow: visible;
+}
+
+.hungry-house .restBoxContent .munch-rating {
   float: right;
 }
