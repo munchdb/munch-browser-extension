@@ -29,7 +29,7 @@ function renderFound (eatery, domElement) {
     eatery.fsa.postcode
   ].filter(Boolean).join(',<br>')
   let displayName = eatery.fsa.business_name
-  if (displayName.toLowerCase() !== eatery.name) {
+  if (displayName.toLowerCase() !== eatery.name.toLowerCase()) {
     displayName = `${displayName} (also known as)`
   }
 
