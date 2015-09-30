@@ -28,11 +28,15 @@ function renderFound (eatery, domElement) {
     eatery.fsa.address_line_4,
     eatery.fsa.postcode
   ].filter(Boolean).join(',<br>')
+  let displayName = eatery.fsa.business_name
+  if (displayName.toLowerCase() !== eatery.name) {
+    displayName = `${displayName} (also known as)`
+  }
 
   rating.innerHTML = `
     <div class="munch-rating-hint-wrapper">
       <div class="hint__content munch-rating-hint">
-        <h4 class="munch-rating-hint-heading">${eatery.fsa.business_name}</h4>
+        <h4 class="munch-rating-hint-heading">${displayName}</h4>
         <p class="munch-rating-hint-rating">FSA Rating: ${eatery.fsa.rating}</p>
         <p class="munch-rating-hint-authority">Authority: ${eatery.fsa.local_authority_name}</p>
         <p class="munch-rating-hint-date">Rating Date: ${eatery.fsa.rating_date}</p>
