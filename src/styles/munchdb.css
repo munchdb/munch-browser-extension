@@ -63,12 +63,11 @@
 .just-eat .restaurantInner .munch-rating {
   position: absolute;
   top: 90px;
-  right: 0;
+  right: 18px;
 }
 
-/* For first listing on listings */
-.just-eat .firstRestaurant .restaurantInner .munch-rating {
-  top: 60px;
+.just-eat .restaurantInner .address {
+  width: 300px;
 }
 
 /* For restaurant pages */
