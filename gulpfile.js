@@ -29,7 +29,8 @@ gulp.task('dist', ['build'], function (cb) {
  */
 
 gulp.task('css', function () {
-  return pipe('./src/styles/**/*.css', [
+  return pipe('./src/styles/munchdb.scss', [
+    $.sass({errLogToConsole: true}),
     $.autoprefixer({cascade: true}),
     $.concat('munchdb.css')
   ], './tmp')

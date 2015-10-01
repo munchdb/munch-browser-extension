@@ -1,0 +1,145 @@
+@import "includes/hint";
+
+/* Start MunchDB Styles */
+
+.munch-rating {
+  display: inline-block;
+  font-family: "Helvetica", "Arial", sans-serif;
+  width: 212px;
+  height: 44px;
+  color: transparent; /* hide text */
+  background-size: 212px 44px;
+  cursor: pointer;
+}
+
+.munch-rating-hint-wrapper {
+  position: relative;
+  width: 212px;
+  height: 44px;
+}
+
+.munch-rating .munch-rating-hint {
+  box-sizing: border-box;
+  width: 210px;
+  border-radius: 4px;
+  z-index: 999999;
+  top: 40px;
+  left: calc(50% - 88px);
+  line-height: 18px;
+  background: rgba(50, 50, 50, 1);
+  border: 2px solid rgba(52, 52, 52, 1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+  width: 210px;
+
+}
+
+.munch-rating .munch-rating-hint h4,
+.munch-rating .munch-rating-hint p {
+  margin: 0 0 2px 0;
+}
+
+.munch-rating p.munch-rating-hint-address {
+  margin: 4px 0;
+}
+
+.munch-rating .munch-rating-hint a {
+  color: #64D2BC;
+}
+
+.munch-rating-0 {
+  background-image: url('https://munchdb.com/images/ratings/rating-0@2x.png');
+}
+
+.munch-rating-1 {
+  background-image: url('https://munchdb.com/images/ratings/rating-1@2x.png');
+}
+
+.munch-rating-2 {
+  background-image: url('https://munchdb.com/images/ratings/rating-2@2x.png');
+}
+
+.munch-rating-3 {
+  background-image: url('https://munchdb.com/images/ratings/rating-3@2x.png');
+}
+
+.munch-rating-4 {
+  background-image: url('https://munchdb.com/images/ratings/rating-4@2x.png');
+}
+
+.munch-rating-5 {
+  background-image: url('https://munchdb.com/images/ratings/rating-5@2x.png');
+}
+
+.munch-rating-pass {
+  background-image: url('https://munchdb.com/images/ratings/rating-pass@2x.png');
+}
+
+.munch-rating-improvement-required {
+  background-image: url('https://munchdb.com/images/ratings/rating-improvement-required@2x.png');
+}
+
+.munch-rating-not-found {
+  background-image: url('https://munchdb.com/images/ratings/rating-not-found@2x.png');
+}
+
+.munch-rating-awaitinginspection,
+.munch-rating-awaiting-inspection {
+  background-image: url('https://munchdb.com/images/ratings/rating-awaiting-inspection@2x.png');
+}
+
+.munch-rating-awaitingpublication,
+.munch-rating-awaiting-publication {
+  background-image: url('https://munchdb.com/images/ratings/rating-awaiting-publication@2x.png');
+}
+
+.munch-rating-exempt {
+  background-image: url('https://munchdb.com/images/ratings/rating-exempt@2x.png');
+}
+
+
+/* just-eat.co.uk */
+
+/* For listings */
+
+.just-eat .restaurantInner .munch-rating {
+  position: absolute;
+  top: 90px;
+  right: 18px;
+}
+
+.just-eat .restaurantInner .address {
+  width: 300px;
+}
+
+/* For restaurant pages */
+.just-eat .restaurantOverview .munch-rating {
+  margin-top: 10px;
+}
+
+.just-eat .restaurantOverview .details {
+  padding-bottom: 0px;
+}
+
+/* hungryhouse.co.uk */
+
+/* For restaurant listing pages */
+.hungry-house .restsSearchItemResBoxWrapper:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.hungry-house .restsSearchItemResBoxWrapper .munch-rating {
+  float: right;
+}
+
+/* For restaurant pages */
+
+.hungry-house .restMainInfoHeader,
+.hungry-house .restMainInfoHeader h1 {
+  overflow: visible;
+}
+
+.hungry-house .restBoxContent .munch-rating {
+  float: right;
+}
