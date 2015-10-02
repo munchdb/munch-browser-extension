@@ -15,8 +15,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://www.just-eat.co.uk/*",
-        "https://hungryhouse.co.uk/*"
+        "*://www.just-eat.co.uk/*",
+        "*://hungryhouse.co.uk/*"
       ],
       "css": ["munchdb.css"],
       "js": ["contentScript.js"]
