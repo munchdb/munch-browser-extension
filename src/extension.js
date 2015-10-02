@@ -27,6 +27,4 @@ export function ready () {
   return doLookup(siteModule.DIRECTORY_ID, lookupMap, renderResults)
 }
 
-document.addEventListener('DOMContentLoaded', function (event) {
-  ready()
-})
+ready()
