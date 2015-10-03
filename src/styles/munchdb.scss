@@ -33,12 +33,15 @@
 
 }
 
-.munch-rating .munch-rating-hint h4,
-.munch-rating .munch-rating-hint p {
+.munch-rating .munch-rating-hint > * {
   margin: 0 0 2px 0;
 }
 
-.munch-rating p.munch-rating-hint-address {
+.munch-rating .munch-rating-hint-heading {
+  white-space: pre-line;
+}
+
+.munch-rating .munch-rating-hint-address {
   margin: 4px 0;
 }
 
