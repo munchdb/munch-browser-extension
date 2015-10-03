@@ -14,9 +14,8 @@ domains:
 It can run within the following desktop browsers:
 
 * [Google Chrome][Chrome]
-* ~~[Mozilla Firefox][Firefox]~~ (soon)
-* ~~[Safari][Safari]~~ (soon)
 * ~~[Opera][Opera]~~ (soon)
+* ~~[Mozilla Firefox][Firefox]~~ (soon)
 
 # Installation instructions
 

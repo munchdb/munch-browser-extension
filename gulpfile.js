@@ -12,7 +12,7 @@ gulp.task('clean', function () {
 })
 
 gulp.task('build', function (cb) {
-  $.runSequence('clean', 'css', 'js', 'images', 'chrome', 'opera', 'safari', 'firefox', cb)
+  $.runSequence('clean', 'css', 'js', 'images', 'chrome', 'opera', 'firefox', cb)
 })
 
 gulp.task('default', ['build'], function () {
@@ -71,18 +71,6 @@ gulp.task('opera', ['chrome'], function () {
 
 gulp.task('opera:nex', function () {
   return pipe('./dist/chrome.crx', [$.rename('opera.nex')], './dist')
-})
-
-// Safari
-gulp.task('safari', function () {
-  return merge(
-    pipe('./icons/**/*', './tmp/safari/munchdb.safariextension/icons'),
-    pipe([
-      './tmp/munchdb.css',
-      './tmp/munchdb.js',
-      './src/browsers/safari/**/*'
-    ], './tmp/safari/munchdb.safariextension/')
-  )
 })
 
 // Firefox
