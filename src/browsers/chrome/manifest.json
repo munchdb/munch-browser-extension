@@ -7,10 +7,12 @@
   "description": "Munch displays food hygiene ratings on your favourite UK takeaway websites: JustEat & HungryHouse.",
   "homepage_url": "https://munchdb.com",
   "icons": {
-    "16": "icons/munch-logo-small-32.png",
-    "48": "icons/munch-logo-small-96.png",
-    "128": "icons/munch-logo-small-256.png",
-    "256": "icons/munch-logo-small-512.png"
+    "16": "icons/munch-logo-square-32.png",
+    "48": "icons/munch-logo-square-96.png",
+    "64": "icons/munch-logo-square-128.png",
+    "128": "icons/munch-logo-square-256.png",
+    "256": "icons/munch-logo-square-512.png",
+    "512": "icons/munch-logo-square-1024.png"
   },
   "content_scripts": [
     {
