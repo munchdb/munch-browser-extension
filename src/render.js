@@ -1,3 +1,4 @@
+import {displayAddress} from './utils/display'
 import {slugify} from './utils/text'
 
 export function renderResults (lookupMap, xhrEvent) {
@@ -21,18 +22,12 @@ export function renderResults (lookupMap, xhrEvent) {
 function renderFound (eatery, domElement) {
   let rating = document.createElement('a')
   let sluggedRating = slugify(eatery.fsa.rating)
-  let address = [
-    eatery.fsa.address_line_1,
-    eatery.fsa.address_line_2,
-    eatery.fsa.address_line_3,
-    eatery.fsa.address_line_4,
-    eatery.fsa.postcode
-  ].filter(Boolean).join(',<br>')
+  let address = displayAddress(eatery.fsa)
   let displayName = eatery.fsa.business_name
+
   if (displayName.toLowerCase() !== eatery.name.toLowerCase()) {
     displayName = `${displayName} (also known as)`
   }
-
   rating.innerHTML = `
     <div class="munch-rating-hint-wrapper">
       <div class="hint__content munch-rating-hint">
@@ -53,8 +48,17 @@ function renderFound (eatery, domElement) {
 }
 
 function renderNotFound (slug, domElement) {
-  let span = document.createElement('span')
-  span.innerHTML = 'Rating not Found'
-  span.className = `munch-rating munch-rating-not-found`
-  domElement.appendChild(span)
+  let rating = document.createElement('span')
+  rating.innerHTML = `
+    <div class="munch-rating-hint-wrapper">
+      <div class="hint__content munch-rating-hint">
+        <h4 class="munch-rating-hint-heading">Why was no rating found?</h4>
+        <p><b>1)</b> The restaurant may be newly listed, check back in a few days.</p>
+        <p><b>2)</b> The restaurant's address details did not match up with official records.</p>
+        <p><b>3)</b> The restaurant may be operating without registering with the FSA (illegally).</p>
+      </div>
+    </div>
+  `
+  rating.className = `hint hint--html hint--bottom munch-rating munch-rating-not-found`
+  domElement.appendChild(rating)
 }
