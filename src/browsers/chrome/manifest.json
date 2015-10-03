@@ -27,6 +27,6 @@
     "munchdb.js"
   ],
   "permissions": [
-    "http://api.munchdb.com/*"
+    "https://api.munchdb.com/*"
   ]
 }
