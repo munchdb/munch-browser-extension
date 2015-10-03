@@ -3,17 +3,20 @@
   "title": "MunchDB",
   "description": "Display food hygiene ratings on UK takeaway websites",
   "author": "munchdb.com",
-  "homepage": "http://munchdb.com",
+  "homepage": "https://munchdb.com",
   "lib": "lib",
   "main": "lib/firefox",
   "data": "data",
   "icon": "data/icons/icon48.png",
   "icon64": "data/icons/icon64.png",
-  "license": "MIT",
-  "version": "0.1.0",
+  "license": "BSD",
+  "version": "0.3.1",
   "permissions": {
     "cross-domain-content": [
+      "https://api.munchdb.com",
       "http://www.just-eat.co.uk",
+      "https://www.just-eat.co.uk",
+      "http://hungryhouse.co.uk"
       "https://hungryhouse.co.uk"
     ]
   }

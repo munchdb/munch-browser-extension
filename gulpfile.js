@@ -1,5 +1,4 @@
 var gulp = require('gulp')
-var path = require('path')
 var merge = require('event-stream').merge
 var webpack = require('webpack-stream')
 var $ = require('gulp-load-plugins')()
@@ -21,7 +20,7 @@ gulp.task('default', ['build'], function () {
 })
 
 gulp.task('dist', ['build'], function (cb) {
-  $.runSequence('firefox:xpi', 'chrome:zip', 'chrome:crx', 'opera:nex', cb)
+  $.runSequence('firefox:xpi', 'chrome:zip', 'opera:nex', cb)
 })
 
 /**
@@ -63,17 +62,6 @@ gulp.task('chrome', function () {
 
 gulp.task('chrome:zip', function () {
   return pipe('./tmp/chrome/**/*', [$.zip('chrome.zip')], './dist')
-})
-
-gulp.task('chrome:_crx', function (cb) {
-  $.run('"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"' +
-    ' --pack-extension=' + path.join(__dirname, './tmp/chrome') +
-    ' --pack-extension-key=' + path.join(process.env.HOME, '.ssh/chrome.pem')
-  ).exec(cb)
-})
-
-gulp.task('chrome:crx', ['chrome:_crx'], function () {
-  return pipe('./tmp/chrome.crx', './dist')
 })
 
 // Opera
