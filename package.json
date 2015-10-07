@@ -1,6 +1,6 @@
 {
   "name": "munchdb",
-  "version": "0.3.6",
+  "version": "0.4.0",
   "description": "Cross browser extension to display food hygiene ratings on UK takeaway websites",
   "main": "inject.js",
   "scripts": {
