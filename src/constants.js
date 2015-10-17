@@ -4,3 +4,4 @@ export const SITES = {
   JUST_EAT: 1,
   HUNGRY_HOUSE: 2
 }
+export const FOODGOV_SEARCH_URL = 'http://ratings.food.gov.uk/'

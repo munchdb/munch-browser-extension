@@ -1,5 +1,6 @@
 import {displayAddress} from './utils/display'
 import {slugify} from './utils/text'
+import {FOODGOV_SEARCH_URL} from './constants'
 
 export function renderResults (lookupMap, xhrEvent) {
   let response = xhrEvent.currentTarget.response
@@ -37,7 +38,7 @@ function renderFound (eatery, domElement) {
         <p class="munch-rating-hint-date">Rating Date: ${eatery.fsa.rating_date}</p>
         <p class="munch-rating-hint-address">${address}</p>
         <a class="munch-rating-hint-url" href="${eatery.fsa.url}" title="Food Standards Agency" target="_blank">Visit on food.gov.uk</a>
-        </p>
+        <span class="fsa-logo"></span>
       </div>
     </div>
     `
@@ -48,17 +49,21 @@ function renderFound (eatery, domElement) {
 }
 
 function renderNotFound (slug, domElement) {
-  let rating = document.createElement('span')
+  let rating = document.createElement('a')
   rating.innerHTML = `
     <div class="munch-rating-hint-wrapper">
       <div class="hint__content munch-rating-hint">
         <h4 class="munch-rating-hint-heading">Why was no rating found?</h4>
-        <p><b>1)</b> The restaurant may be newly listed, check back in a few days.</p>
+        <p><b>1)</b> The restaurant may be newly listed here, check back in a few days.</p>
         <p><b>2)</b> The restaurant's address details did not match up with official records.</p>
         <p><b>3)</b> The restaurant may be operating without registering with the FSA (illegally).</p>
+        <a class="munch-rating-hint-url" href="${FOODGOV_SEARCH_URL}" title="Search on food.gov.uk">Search on food.gov.uk</a>
+        <span class="fsa-logo"></span>
       </div>
     </div>
   `
   rating.className = `hint hint--html hint--bottom munch-rating munch-rating-not-found`
+  rating.href = FOODGOV_SEARCH_URL
+  rating.target = '_blank'
   domElement.appendChild(rating)
 }
