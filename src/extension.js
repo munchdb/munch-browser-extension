@@ -20,7 +20,9 @@ export function ready () {
   }
   log(`Path Lookup Function => ${pathLookupFunc.name}`)
   let lookupMap = pathLookupFunc()
-  if (lookupMap.size === 0) {
+  if (lookupMap.size > 0) {
+    log('Looking up: ', [...lookupMap.keys()])
+  } else {
     log('No eateries were found on this page.')
     return
   }

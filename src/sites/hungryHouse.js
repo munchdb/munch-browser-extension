@@ -12,15 +12,15 @@ function lookupAreaListings () {
   const map = new Map()
 
   for (var element of restaurants) {
-    let url = element.querySelector('.restPageLink').getAttribute('href').replace('/', '')
+    let url = element.querySelector('.restPageLink').getAttribute('href').replace('/', '').toLowerCase()
     map.set(url, element)
   }
   return map
 }
 
 function lookupRestaurantListing () {
+  const slug = window.location.pathname.replace('/', '').toLowerCase()
   const restaurant = document.querySelector('.restBoxContent h1')
-  const slug = window.location.pathname.replace('/', '')
   return new Map([
     [slug, restaurant]
   ])

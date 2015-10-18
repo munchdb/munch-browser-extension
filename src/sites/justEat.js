@@ -17,7 +17,7 @@ function lookupAreaListings () {
 
   for (var element of restaurants) {
     let url = element.querySelector('h2 a').getAttribute('href')
-    let slug = extractText(url, SLUG_REGEX)
+    let slug = extractText(url, SLUG_REGEX).toLowerCase()
     map.set(slug, element)
   }
   return map
@@ -25,7 +25,7 @@ function lookupAreaListings () {
 
 function lookupRestaurantListing () {
   let el
-  const slug = extractText(window.location.pathname, SLUG_REGEX)
+  const slug = extractText(window.location.pathname, SLUG_REGEX).toLowerCase()
   const selectors = [
     '.restaurantOverview .details',
     '.restaurant-info-detail',
