@@ -18,7 +18,8 @@
     {
       "matches": [
         "*://www.just-eat.co.uk/*",
-        "*://hungryhouse.co.uk/*"
+        "*://hungryhouse.co.uk/*",
+        "*://deliveroo.co.uk/*"
       ],
       "css": ["munchdb.css"],
       "js": ["contentScript.js"]
