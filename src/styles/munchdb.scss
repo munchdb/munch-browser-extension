@@ -18,6 +18,7 @@
   height: 30px;
 }
 
+// Specifity required to override host sites' styles.
 .munch-rating .munch-rating-hint {
   box-sizing: border-box;
   width: 160px;
@@ -39,6 +40,10 @@
     color: #64D2BC;
   }
 
+  .faint {
+    color: #888787;
+  }
+
   .munch-rating-hint-address {
     margin: 4px 0;
   }
@@ -52,6 +57,7 @@
     background-size: 75px 30px;
   }
 }
+
 
 .munch-rating-0 {
   background-image: url('https://munchdb.com/images/ratings/v2/0.png');

@@ -24,16 +24,17 @@ function renderFound (eatery, domElement) {
   let rating = document.createElement('a')
   let sluggedRating = slugify(eatery.fsa.rating)
   let address = displayAddress(eatery.fsa)
-  let displayName = eatery.fsa.business_name
+  let displayName = ''
 
-  if (displayName.toLowerCase() !== eatery.name.toLowerCase()) {
-    displayName = `${displayName} (also known as)`
+  if (eatery.name.toLowerCase() !== eatery.fsa.business_name.toLowerCase()) {
+    displayName = `<p><i class="faint">(Found as)</i></p>
+                   <h4 class="munch-rating-hint-heading">${eatery.fsa.business_name} </h4>`
   }
   rating.innerHTML = `
     <div class="munch-rating-hint-wrapper">
       <div class="hint__content munch-rating-hint">
-        <h4 class="munch-rating-hint-heading">${displayName}</h4>
-        <p class="munch-rating-hint-rating">FSA Rating: ${eatery.fsa.rating}</p>
+        ${displayName}
+        <p class="munch-rating-hint-rating">FSA Rating: <b>${eatery.fsa.rating}</b> <i class="faint">(0 to 5)</i></p>
         <p class="munch-rating-hint-authority">Authority: ${eatery.fsa.local_authority_name}</p>
         <p class="munch-rating-hint-date">Rating Date: ${eatery.fsa.rating_date}</p>
         <p class="munch-rating-hint-address">${address}</p>
