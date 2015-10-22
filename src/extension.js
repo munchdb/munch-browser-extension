@@ -26,7 +26,7 @@ export function ready () {
     log('No eateries were found on this page.')
     return
   }
-  return doLookup(siteModule.DIRECTORY_ID, lookupMap, renderResults)
+  return doLookup(site, lookupMap, renderResults)
 }
 
 ready()

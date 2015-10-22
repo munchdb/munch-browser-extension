@@ -1,7 +1,5 @@
 import {extractText} from './../utils/text'
 
-export const DIRECTORY_ID = 1
-
 export const SLUG = 'just-eat'
 
 export const PATH_TO_FUNC_MAP = new Map([

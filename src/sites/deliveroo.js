@@ -1,7 +1,5 @@
 import {extractText} from './../utils/text'
 
-export const DIRECTORY_ID = 4
-
 export const SLUG = 'deliveroo'
 
 export const PATH_TO_FUNC_MAP = new Map([
