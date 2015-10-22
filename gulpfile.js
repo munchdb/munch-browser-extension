@@ -15,8 +15,8 @@ gulp.task('build', function (cb) {
   $.runSequence('clean', 'css', 'js', 'images', 'chrome', 'opera', 'firefox', cb)
 })
 
-gulp.task('default', ['build'], function () {
-  gulp.watch(['./src/**/*'], ['default'])
+gulp.task('default', function () {
+  gulp.watch(['./src/**/*'], ['build', 'firefox:xpi'])
 })
 
 gulp.task('dist', ['build'], function (cb) {
