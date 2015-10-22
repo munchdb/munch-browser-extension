@@ -1,6 +1,6 @@
 import {extractText} from './../utils/text'
 
-export const DIRECTORY_ID = 3
+export const DIRECTORY_ID = 4
 
 export const SLUG = 'deliveroo'
 
