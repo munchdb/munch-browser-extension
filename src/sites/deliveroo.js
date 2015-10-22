@@ -12,15 +12,14 @@ export const PATH_TO_FUNC_MAP = new Map([
 const SLUG_REGEX = '/([a-zA-Z0-9-\.]+)$'
 
 function lookupAreaListings () {
-  console.log("lookupAreaListings DELIVEROOOOO")
   const restaurants = document.querySelectorAll('.restaurant--details')
   const map = new Map()
 
   for (var element of restaurants) {
     let url = element.querySelector('a').getAttribute('href')
     let slug = extractText(url, SLUG_REGEX)
-    console.log(slug)
-    map.set(slug, element)
+    let insertInside = element.querySelector('.list-item-inner')
+    map.set(slug, insertInside)
   }
   return map
 

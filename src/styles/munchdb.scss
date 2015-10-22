@@ -35,6 +35,21 @@
     margin: 0 0 4px 0;
     white-space: pre-line;
   }
+  p {
+    font-size: 1em;
+    color: #fcfcfc;
+    text-align: left;
+    text-transform: none;
+
+  }
+
+  h4 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #fcfcfc;
+    text-align: left;
+    text-transform: none;
+  }
 
   a {
     color: #64D2BC;
@@ -131,15 +146,22 @@
   padding-bottom: 0px;
 }
 
-/* hungryhouse.co.uk */
+/* deliveroo.co.uk */
 
 /* For restaurant listing pages */
+.deliveroo .munch-rating {
+    margin-top: 5px;
+    display: inline-block;
+}
+
 .hungry-house .restsSearchItemResBoxWrapper:after {
   content:"";
   display:table;
   clear:both;
 }
+/* hungryhouse.co.uk */
 
+/* For restaurant listing pages */
 .hungry-house .restsSearchItemResBoxWrapper .munch-rating {
   float: right;
 }
