@@ -55,7 +55,7 @@ function renderNotFound (slug, domElement) {
     <div class="munch-rating-hint-wrapper">
       <div class="hint__content munch-rating-hint">
         <h4 class="munch-rating-hint-heading">Why was no rating found?</h4>
-        <p><b>1)</b> The restaurant may be newly listed here, check back in a few days.</p>
+        <p><b>1)</b> The restaurant may be newly listed, check back in a few days.</p>
         <p><b>2)</b> The restaurant's address details did not match up with official records.</p>
         <p><b>3)</b> The restaurant may be operating without registering with the FSA (illegally).</p>
         <a class="munch-rating-hint-url" href="${FOODGOV_SEARCH_URL}" title="Search on food.gov.uk">Search on food.gov.uk</a>
