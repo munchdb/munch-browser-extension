@@ -10,7 +10,7 @@
   "icon": "data/icons/icon48.png",
   "icon64": "data/icons/icon64.png",
   "license": "BSD",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "permissions": {
     "cross-domain-content": [
       "https://api.munchdb.com",
