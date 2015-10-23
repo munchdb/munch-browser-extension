@@ -33,6 +33,6 @@ It can run within the following desktop browsers:
 [JUSTEAT]: http://www.just-eat.co.uk
 [Hungryhouse]: https://hungryhouse.co.uk
 
-[Chrome]: https://addons.opera.com/extensions/details/munchdb-food-hygiene-ratings-for-takeaways/
+[Chrome]: https://chrome.google.com/webstore/detail/munchdb-food-hygiene-rati/diocoabnonklkkkmhchegbfjmekfjfpm
 [Firefox]: http://todo
 [Opera]: https://addons.opera.com/extensions/details/munchdb-food-hygiene-ratings-for-takeaways/
