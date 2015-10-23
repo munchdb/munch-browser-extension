@@ -30,6 +30,7 @@
   background: rgba(50, 50, 50, 1);
   border: 2px solid rgba(52, 52, 52, 1);
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+  font-family: Helvetica, Arial, sans-serif;
 
   > * {
     margin: 0 0 4px 0;
@@ -53,6 +54,14 @@
 
   a {
     color: #64D2BC;
+  }
+
+  i {
+      position: relative;
+      font-size: 1em;
+      margin: 0;
+      padding: 0;
+      display: inline;
   }
 
   .faint {
@@ -148,22 +157,36 @@
 
 /* deliveroo.co.uk */
 
+/* For restaurant pages */
+.deliveroo .restaurant-details .munch-rating {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+}
+
+/* For listing pages */
+.deliveroo .results-group .munch-rating {
+    position: absolute;
+    right: -230px;
+}
+
+.deliveroo .results-group,
+.deliveroo ul.results-list,
+.deliveroo ul.results-list li,
+.deliveroo ul.results-list li a {
+    overflow: visible;
+}
+
+/* hungryhouse.co.uk */
+
 /* For restaurant listing pages */
-.deliveroo .munch-rating {
-    margin-top: 5px;
-    display: inline-block;
+.hungry-house .restsSearchItemResBoxWrapper .munch-rating {
+  float: right;
 }
 
 .hungry-house .restsSearchItemResBoxWrapper:after {
   content:"";
   display:table;
   clear:both;
-}
-/* hungryhouse.co.uk */
-
-/* For restaurant listing pages */
-.hungry-house .restsSearchItemResBoxWrapper .munch-rating {
-  float: right;
 }
 
 /* For restaurant pages */

@@ -7,7 +7,7 @@ export const PATH_TO_FUNC_MAP = new Map([
   ['^/menu', lookupRestaurantListing]
 ])
 
-const SLUG_REGEX = '/([a-zA-Z0-9-\.]+)$'
+const SLUG_REGEX = '/([a-zA-Z0-9-\.\'&\!]+)$'
 
 function lookupAreaListings () {
   const restaurants = document.querySelectorAll('.restaurant--details')
@@ -24,7 +24,7 @@ function lookupAreaListings () {
 }
 
 function lookupRestaurantListing () {
-  const el = document.querySelector('.restaurant-meta')
+  const el = document.querySelector('.restaurant-details h1')
   const slug = extractText(window.location.pathname, SLUG_REGEX)
   return new Map([
     [slug, el]
