@@ -1,5 +1,7 @@
 export const DIRECTORY_ID = 2
 
+export const SLUG = 'hungry-house'
+
 export const PATH_TO_FUNC_MAP = new Map([
   ['^/takeaways', lookupAreaListings],
   ['^/.+', lookupRestaurantListing]
