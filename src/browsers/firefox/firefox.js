@@ -1,22 +1,21 @@
 var data = require('sdk/self').data
-  , pageMod = require('sdk/page-mod')
-  , scripts = [
-      data.url('munchdb.js')
-    ]
-  , styles = [
-      data.url('munchdb.css')
-  ]
+var pageMod = require('sdk/page-mod')
+var scripts = [
+  data.url('munchdb.js')
+]
+var styles = [
+  data.url('munchdb.css')
+]
+
+var includePatterns = [
+  '*.deliveroo.co.uk',
+  '*.just-eat.co.uk',
+  '*.hungryhouse.co.uk'
+]
 
 pageMod.PageMod({
-  include: 'http://www.just-eat.co.uk/*',
-  contentScriptFile : scripts,
-  contentStyleFile  : styles,
-  contentScriptWhen : 'start'
-})
-
-pageMod.PageMod({
-  include: 'https://hungryhouse.co.uk/*',
-  contentScriptFile : scripts,
-  contentStyleFile  : styles,
-  contentScriptWhen : 'start'
+  include: includePatterns,
+  contentScriptFile: scripts,
+  contentStyleFile: styles,
+  contentScriptWhen: 'end'
 })
