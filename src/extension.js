@@ -12,10 +12,10 @@ export function ready () {
   }
   let siteModule = sites.loadSiteModule(site)
   log(`Directory ID => ${site} (${siteModule.SLUG})`)
-  injectBodyClass(siteModule.SLUG)
+  injectBodyClass(window.document, siteModule.SLUG)
   let pathLookupFunc = sites.getPathLookupFunc(window.location.pathname, siteModule.PATH_TO_FUNC_MAP)
   if (pathLookupFunc === null) {
-    log('Lookup is not supported on this page.')
+    log('Lookup is not supported for this type of page.')
     return
   }
   log(`Path Lookup Function => ${pathLookupFunc.name}`)

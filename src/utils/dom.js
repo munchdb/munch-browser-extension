@@ -1,3 +1,3 @@
-export function injectBodyClass (cls) {
-  document.body.className += ` ${cls}`
+export function injectBodyClass (doc, slug) {
+  doc.body.className += ` munchdb-${slug}`
 }
