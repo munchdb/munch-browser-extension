@@ -139,54 +139,54 @@
 
 /* For listings */
 
-.just-eat .restaurantInner .munch-rating {
+.munchdb-just-eat .restaurantInner .munch-rating {
   position: absolute;
   top: 90px;
   right: 18px;
 }
 
-.just-eat .restaurantInner .address {
+.munchdb-just-eat .restaurantInner .address {
   width: 300px;
 }
 
 /* For restaurant pages */
-.just-eat .restaurantOverview .munch-rating {
+.munchdb-just-eat .restaurantOverview .munch-rating {
   margin-top: 10px;
 }
 
-.just-eat .restaurantOverview .details {
+.munchdb-just-eat .restaurantOverview .details {
   padding-bottom: 0px;
 }
 
 /* deliveroo.co.uk */
 
 /* For restaurant pages */
-.deliveroo .restaurant-details .munch-rating {
+.munchdb-deliveroo .restaurant-details .munch-rating {
     display: block;
     margin: 0.5rem auto 1rem auto;
 }
 
 /* For listing pages */
-.deliveroo .results-group .munch-rating {
+.munchdb-deliveroo .results-group .munch-rating {
     position: absolute;
     right: -230px;
 }
 
-.deliveroo .results-group,
-.deliveroo ul.results-list,
-.deliveroo ul.results-list li,
-.deliveroo ul.results-list li a {
+.munchdb-deliveroo .results-group,
+.munchdb-deliveroo ul.results-list,
+.munchdb-deliveroo ul.results-list li,
+.munchdb-deliveroo ul.results-list li a {
     overflow: visible;
 }
 
 /* hungryhouse.co.uk */
 
 /* For restaurant listing pages */
-.hungry-house .restsSearchItemResBoxWrapper .munch-rating {
+.munchdb-hungry-house .restsSearchItemResBoxWrapper .munch-rating {
   float: right;
 }
 
-.hungry-house .restsSearchItemResBoxWrapper:after {
+.munchdb-hungry-house .restsSearchItemResBoxWrapper:after {
   content:"";
   display:table;
   clear:both;
@@ -194,11 +194,11 @@
 
 /* For restaurant pages */
 
-.hungry-house .restMainInfoHeader,
-.hungry-house .restMainInfoHeader h1 {
+.munchdb-hungry-house .restMainInfoHeader,
+.munchdb-hungry-house .restMainInfoHeader h1 {
   overflow: visible;
 }
 
-.hungry-house .restBoxContent .munch-rating {
+.munchdb-hungry-house .restBoxContent .munch-rating {
   float: right;
 }
