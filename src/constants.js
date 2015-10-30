@@ -5,5 +5,3 @@ export const SITES = {
   HUNGRY_HOUSE: 2,
   DELIVEROO: 4
 }
-
-export const FOODGOV_SEARCH_URL = 'http://ratings.food.gov.uk/'

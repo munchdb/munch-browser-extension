@@ -1,4 +1,4 @@
-import {LOG_PREFIX} from './constants'
+import {LOG_PREFIX} from '../constants'
 
 export function log () {
   let args = Array.prototype.slice.call(arguments)

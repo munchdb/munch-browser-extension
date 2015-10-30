@@ -1,0 +1,22 @@
+<div class="hint hint--html hint--bottom munch-rating munch-rating-{{sluggedRating}}">
+  <div class="munch-rating-hint-wrapper">
+    <div class="hint__content munch-rating-hint">
+      {{#displayName}}
+        <p><i class="faint">(Found as)</i></p>
+        <h4 class="munch-rating-hint-heading">{{eatery.fsa.business_name}}</h4>
+      {{/displayName}}
+      <p class="munch-rating-hint-rating">FSA Rating: <b>{{eatery.fsa.rating}}</b> <i class="faint">(0 to 5)</i></p>
+      <p class="munch-rating-hint-authority">Authority: {{eatery.fsa.local_authority_name}}</p>
+      <p class="munch-rating-hint-date">Rating Date: {{eatery.fsa.rating_date}}</p>
+      <p class="munch-rating-hint-address">
+        {{#eatery.fsa.address_line_1}}{{eatery.fsa.address_line_1}},<br>{{/eatery.fsa.address_line_1}}
+        {{#eatery.fsa.address_line_2}}{{eatery.fsa.address_line_2}},<br>{{/eatery.fsa.address_line_2}}
+        {{#eatery.fsa.address_line_3}}{{eatery.fsa.address_line_3}},<br>{{/eatery.fsa.address_line_3}}
+        {{#eatery.fsa.address_line_4}}{{eatery.fsa.address_line_4}},<br>{{/eatery.fsa.address_line_4}}
+        {{eatery.fsa.postcode}}.
+      </p>
+      <p><a class="munch-rating-hint-url" href="{{eatery.fsa.url}}" title="Food Standards Agency" target="_blank">Visit on food.gov.uk</a></p>
+      <span class="fsa-logo"></span>
+    </div>
+  </div>
+</div>

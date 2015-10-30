@@ -2,6 +2,7 @@
 node_modules
 
 # Build
+src/templates.js
 dist/
 tmp/
 

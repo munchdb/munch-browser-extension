@@ -1,6 +1,6 @@
 import * as sites from './sites'
 import {doLookup} from './munchClient'
-import {log} from './log'
+import {log} from './utils/log'
 import {renderResults} from './render'
 import {injectBodyClass} from './utils/dom'
 

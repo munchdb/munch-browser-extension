@@ -1,5 +1,5 @@
 import {API_LOOKUP_ENDPOINT} from './constants'
-import {log} from './log'
+import {log} from './utils/log'
 import {partial} from './utils/functional'
 import {chunkMap} from './utils/chunk'
 

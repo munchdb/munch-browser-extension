@@ -9,7 +9,7 @@
   height: 30px;
   color: transparent; /* hide text */
   background-size: 160px 30px;
-  cursor: pointer;
+  cursor: help;
 }
 
 .munch-rating-hint-wrapper {
@@ -73,6 +73,7 @@
 
   .munch-rating-hint-address {
     margin: 4px 0;
+    white-space: initial;
   }
 
   .fsa-logo {

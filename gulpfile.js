@@ -12,7 +12,7 @@ gulp.task('clean', function () {
 })
 
 gulp.task('build', function (cb) {
-  $.runSequence('clean', 'css', 'js', 'images', 'chrome', 'opera', 'firefox', cb)
+  $.runSequence('clean', 'css', 'templates', 'js', 'images', 'chrome', 'opera', 'firefox', cb)
 })
 
 gulp.task('default', ['build'], function () {
@@ -33,6 +33,12 @@ gulp.task('css', function () {
     $.autoprefixer({cascade: true}),
     $.concat('munchdb.css')
   ], './tmp')
+})
+
+gulp.task('templates', function () {
+  gulp.src('./src/templates/**/*.mustache')
+      .pipe($.hoganCompile('templates.js', {hoganModule: 'hogan.js'}))
+      .pipe(gulp.dest('./src'))
 })
 
 gulp.task('js', function () {

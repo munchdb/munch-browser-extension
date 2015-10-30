@@ -1,4 +1,4 @@
-import {log} from './../log'
+import {log} from './log'
 
 export function extractText (str, regex_str) {
   let regex = new RegExp(regex_str)
