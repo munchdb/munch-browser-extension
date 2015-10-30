@@ -27,6 +27,10 @@ It can run within the following desktop browsers:
 
 * Download and install from the [Opera Add-ons Store][Opera] (once it's been approved).
 
+# License
+
+This code is free to use under a 3-clause BSD License, see [LICENSE][LICENSE].
+
 [MunchDB]: https://munchdb.com "Food Hygiene ratings for JUSTEAT & Hungryhouse takeway websites"
 [FSA]: http://fsa.gov.uk "The UK's Food Standards Agency"
 
@@ -36,3 +40,5 @@ It can run within the following desktop browsers:
 [Chrome]: https://chrome.google.com/webstore/detail/munchdb-food-hygiene-rati/diocoabnonklkkkmhchegbfjmekfjfpm
 [Firefox]: http://todo
 [Opera]: https://addons.opera.com/extensions/details/munchdb-food-hygiene-ratings-for-takeaways/
+
+[LICENSE]: https://github.com/munchdb/munch-browser-extension/blob/master/LICENSE
