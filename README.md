@@ -10,18 +10,23 @@ domains:
 
 * JUSTEAT > [just-eat.co.uk][JUSTEAT]
 * Hungryhouse > [hungryhouse.co.uk][Hungryhouse]
+* Deliveroo > [deliveroo.co.uk][Deliveroo]
 
 It can run within the following desktop browsers:
 
 * [Google Chrome][Chrome]
+* [Mozilla Firefox][Firefox]
 * [Opera][Opera] (awaiting approval)
-* ~~[Mozilla Firefox][Firefox]~~ (soon)
 
 # Installation instructions
 
 ## Google Chrome
 
 * Download and install from the [Chrome Web Store][Chrome]
+
+## Mozilla Firefox
+
+* Download and install from the [Firefox Add-ons Store][Firefox]
 
 ## Opera
 
@@ -37,8 +42,9 @@ This code is free to use under a 3-clause BSD License, see [LICENSE][LICENSE].
 [JUSTEAT]: http://www.just-eat.co.uk
 [Hungryhouse]: https://hungryhouse.co.uk
 [Deliveroo]: https://deliveroo.co.uk/
+
 [Chrome]: https://chrome.google.com/webstore/detail/munchdb-food-hygiene-rati/diocoabnonklkkkmhchegbfjmekfjfpm
-[Firefox]: http://todo
+[Firefox]: https://addons.mozilla.org/en-US/firefox/addon/munchdb/
 [Opera]: https://addons.opera.com/extensions/details/munchdb-food-hygiene-ratings-for-takeaways/
 
 [LICENSE]: https://github.com/munchdb/munch-browser-extension/blob/master/LICENSE
