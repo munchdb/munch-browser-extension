@@ -5,5 +5,5 @@ export function injectBodyClass (doc, slug) {
 export function stringToDOM (str) {
   let parser = new DOMParser()
   let doc = parser.parseFromString(str, 'text/html')
-  return doc.firstChild
+  return doc.body.firstChild
 }
