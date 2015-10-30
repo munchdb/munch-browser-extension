@@ -52,6 +52,7 @@
     color: #fcfcfc;
     text-align: left;
     text-transform: none;
+    font-family: Helvetica, Arial, sans-serif;
   }
 
   a {
@@ -86,54 +87,28 @@
   }
 }
 
+$rating-pips: (
+ 0: 0,
+ 1: 1,
+ 2: 2,
+ 3: 3,
+ 4: 4,
+ 5: 5,
+ pass: pass,
+ improvement-required: improvement-required,
+ not-found: not-found,
+ awaitinginspection: awaiting,
+ awaiting-inspection: awaiting,
+ awaitingpublication: awaiting,
+ awaiting-publication: awaiting,
+ exempt: exempt
+);
 
-.munch-rating-0 {
-  background-image: url('https://munchdb.com/images/ratings/v2/0.png');
+@each $rating-slug, $filename in $rating-pips {
+    .munch-rating--#{$rating-slug} {
+      background-image: url('https://munchdb.com/images/ratings/v2/#{$filename}.png');
+    }
 }
-
-.munch-rating-1 {
-  background-image: url('https://munchdb.com/images/ratings/v2/1.png');
-}
-
-.munch-rating-2 {
-  background-image: url('https://munchdb.com/images/ratings/v2/2.png');
-}
-
-.munch-rating-3 {
-  background-image: url('https://munchdb.com/images/ratings/v2/3.png');
-}
-
-.munch-rating-4 {
-  background-image: url('https://munchdb.com/images/ratings/v2/4.png');
-}
-
-.munch-rating-5 {
-  background-image: url('https://munchdb.com/images/ratings/v2/5.png');
-}
-
-.munch-rating-pass {
-  background-image: url('https://munchdb.com/images/ratings/v2/pass.png');
-}
-
-.munch-rating-improvement-required {
-  background-image: url('https://munchdb.com/images/ratings/v2/improvement-required.png');
-}
-
-.munch-rating-not-found {
-  background-image: url('https://munchdb.com/images/ratings/v2/not-found.png');
-}
-
-.munch-rating-awaitinginspection,
-.munch-rating-awaiting-inspection,
-.munch-rating-awaitingpublication,
-.munch-rating-awaiting-publication {
-  background-image: url('https://munchdb.com/images/ratings/v2/awaiting.png');
-}
-
-.munch-rating-exempt {
-  background-image: url('https://munchdb.com/images/ratings/v2/exempt.png');
-}
-
 
 
 /* just-eat.co.uk */
