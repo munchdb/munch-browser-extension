@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MunchDB Options</title>
+  <style>
+    body {
+      padding: 10px;
+    }
+
+    #disable_affiliate {
+      margin-right: 4px;
+    }
+
+    #save {
+      display: inline-block;
+      margin: 20px 4px 0 0;
+    }
+
+    #status {
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <label for="disable_affiliate">
+    <input type="checkbox" id="disable_affiliate" name="disable_affiliate">
+    Stop supporting further development financially. <a target="_blank" href="https://munchdb.com/faq.html">FAQ</a>.
+  </label>
+
+  <button id="save">Save</button>
+  <div id="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
