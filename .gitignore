@@ -9,5 +9,6 @@ tmp/
 # Keys
 dist.pem
 
-# OS
+# OS/Editors
 .DS_Store
+.tern-port
