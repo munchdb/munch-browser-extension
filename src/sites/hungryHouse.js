@@ -7,6 +7,12 @@ export const PATH_TO_FUNC_MAP = new Map([
   ['^/.+', lookupRestaurantListing]
 ])
 
+export const AFFILIATE_SUPPORT = true
+export const AFFILIATE_URL = 'https://www.awin1.com/awclick.php?mid=3898&id=251923&clickref=munchdb-extension&p={url}'
+export const REPLACE_LINKS = [
+  '.restPageLink'
+]
+
 function lookupAreaListings () {
   const restaurants = document.querySelectorAll('.restaurantBlock .restsSearchItemResBoxWrapper')
   const map = new Map()

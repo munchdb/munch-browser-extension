@@ -5,3 +5,6 @@ export const SITES = {
   HUNGRY_HOUSE: 2,
   DELIVEROO: 4
 }
+export const DEFAULT_SETTINGS = {
+  disableAffiliate: false
+}
