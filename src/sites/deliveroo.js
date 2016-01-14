@@ -9,6 +9,8 @@ export const PATH_TO_FUNC_MAP = new Map([
 
 const SLUG_REGEX = '/([a-zA-Z0-9-\.\'&\!]+)$'
 
+const AFFILIATE_SUPPORT = false
+
 function lookupAreaListings () {
   const restaurants = document.querySelectorAll('.restaurant--details')
   const map = new Map()

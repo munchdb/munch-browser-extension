@@ -3,7 +3,8 @@ import {doLookup} from './munchClient'
 import {log} from './utils/log'
 import {renderResults} from './render'
 import {injectBodyClass} from './utils/dom'
-import {getSettings} from './utils/dom'
+import {getSettings, replaceLink} from './utils/dom'
+import {partial} from './utils/functional'
 
 export function ready () {
   log('Script loaded')
@@ -32,7 +33,13 @@ export function ready () {
     log('No eateries were found on this page')
     return
   }
-  return doLookup(site, lookupMap, renderResults)
+  doLookup(site, lookupMap, renderResults)
+
+  if (pathLookupFunc && !settings.disableAffiliate && siteModule.AFFILIATE_SUPPORT) {
+    let partialReplaceLink = partial(replaceLink, siteModule.AFFILIATE_URL)
+    siteModule.REPLACE_LINKS.map(partialReplaceLink)
+  }
+  return
 }
 
 ready()
