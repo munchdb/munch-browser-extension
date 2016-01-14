@@ -16,7 +16,7 @@ It can run within the following desktop browsers:
 
 * [Google Chrome][Chrome]
 * [Mozilla Firefox][Firefox]
-* [Opera][Opera] (awaiting approval)
+* [Opera][Opera]
 
 # Revenue Disclosure
 
@@ -26,23 +26,22 @@ runs on are the ones of the supported sites and we will never run on
 other domains. If you would like to stop supporting us with affiliate
 revenue then you can select an option to disable that functionality
 within the extensions panel of whichever browser you are using. The
-extension will continue to work as before.
-
-Thanks for your understanding.
+extension will continue to work as before. Thanks for your support &
+understanding.
 
 # Installation instructions
 
 ## Google Chrome
 
-* Download and install from the [Chrome Web Store][Chrome]
+* Download and install from the [Chrome Web Store][Chrome].
 
 ## Mozilla Firefox
 
-* Download and install from the [Firefox Add-ons Store][Firefox]
+* Download and install from the [Firefox Add-ons Store][Firefox] (awaiting approval from FF).
 
 ## Opera
 
-* Download and install from the [Opera Add-ons Store][Opera] (once it's been approved).
+* Download and install from the [Opera Add-ons Store][Opera].
 
 # License
 
