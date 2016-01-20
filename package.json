@@ -1,7 +1,7 @@
 {
   "name": "munchdb",
   "version": "0.9.2",
-  "description": "Cross browser extension to display food hygiene ratings on UK takeaway websites",
+  "description": "MunchDB displays food hygiene ratings on your favourite UK takeaway websites: JustEat, HungryHouse & Deliveroo.",
   "main": "inject.js",
   "scripts": {
     "test": "gulp test"
@@ -45,8 +45,5 @@
     "underscore.string": "~2.4.0",
     "webpack": "^1.12.2",
     "webpack-stream": "^2.1.1"
-  },
-  "dependencies": {
-    "urijs": "^1.17.0"
   }
 }

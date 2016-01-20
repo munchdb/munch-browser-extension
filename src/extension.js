@@ -1,9 +1,8 @@
 import * as sites from './sites'
-import {doLookup} from './munchClient'
+import {doLookup, trackVisit} from './munchClient'
 import {log} from './utils/log'
 import {renderResults} from './render'
-import {injectBodyClass} from './utils/dom'
-import {getSettings, replaceLink} from './utils/dom'
+import {getSettings, injectBodyClass, trackingIframe} from './utils/dom'
 import {partial} from './utils/functional'
 
 export function ready () {
@@ -36,8 +35,7 @@ export function ready () {
   doLookup(site, lookupMap, renderResults)
 
   if (pathLookupFunc && !settings.disableAffiliate && siteModule.AFFILIATE_SUPPORT) {
-    // let partialReplaceLink = partial(replaceLink, siteModule.AFFILIATE_URL)
-    // siteModule.REPLACE_LINKS.map(partialReplaceLink)
+    trackingIframe(siteModule.AFFILIATE_URL)
   }
   return
 }

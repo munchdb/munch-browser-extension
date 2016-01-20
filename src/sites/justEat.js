@@ -10,11 +10,7 @@ export const PATH_TO_FUNC_MAP = new Map([
 export const SLUG_REGEX = '/restaurants-([a-zA-Z0-9-\.]+)'
 
 export const AFFILIATE_SUPPORT = true
-export const AFFILIATE_URL = 'https://www.awin1.com/awclick.php?mid=2005&id=251923&clickref=munchdb-extension&p={url}'
-export const REPLACE_LINKS = [
-  '.restaurant a',
-  '.restaurantOverview a'
-]
+export const AFFILIATE_URL = 'https://www.awin1.com/awclick.php?mid=2005&id=251923&clickref=munchdb-extension'
 
 function lookupAreaListings () {
   const restaurants = document.querySelectorAll('.restaurant:not(.offlineRestaurant) .restaurantInner')

@@ -8,7 +8,7 @@ export const PATH_TO_FUNC_MAP = new Map([
 ])
 
 export const AFFILIATE_SUPPORT = true
-export const AFFILIATE_URL = 'https://www.awin1.com/awclick.php?mid=3898&id=251923&clickref=munchdb-extension&p={url}'
+export const AFFILIATE_URL = 'https://www.awin1.com/awclick.php?mid=3898&id=251923&clickref=munchdb-extension'
 export const REPLACE_LINKS = [
   '.restPageLink'
 ]

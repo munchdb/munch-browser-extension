@@ -8,7 +8,7 @@ export function doLookup (directoryID, lookupMap, callback) {
   for (let chunkMap of chunkedMaps) {
     let url = getLookupURL(directoryID, chunkMap.keys())
     let partialCallback = partial(callback, chunkMap)
-    sendRequest(url, partialCallback)
+    sendLookupRequest(url, partialCallback)
   }
 }
 
@@ -20,7 +20,7 @@ function getLookupURL (directoryID, lookupKeys) {
   return url
 }
 
-function sendRequest (url, callback) {
+function sendLookupRequest (url, callback) {
   let xhr = new XMLHttpRequest() // eslint-disable-line no-undef
   xhr.open('GET', url)
   xhr.responseType = 'json'

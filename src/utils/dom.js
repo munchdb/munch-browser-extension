@@ -1,8 +1,5 @@
-import URI from 'urijs'
-
 import {DEFAULT_SETTINGS} from './../constants'
 import {log} from './log'
-
 
 export function injectBodyClass (doc, slug) {
   doc.body.className += ` munchdb-${slug}`
@@ -25,14 +22,9 @@ export function getSettings (domElement) {
   return settings
 }
 
-export function replaceLink(affiliateURL, replaceLinkSelector) {
-  let anchors = document.querySelectorAll(replaceLinkSelector)
-  log(anchors)
-  for (let anchor of anchors) {
-    let href = anchor.href
-    let uri = new URI(href)
-    uri.addSearch('munchdb', true)
-    let targetedAffiliateURL = affiliateURL.replace('{url}', encodeURIComponent(uri))
-    anchor.setAttribute('href', targetedAffiliateURL)
-  }
+export function trackingIframe (url) {
+  let iframe = document.createElement('iframe')
+  iframe.style.display = 'none'
+  iframe.src = url
+  document.body.appendChild(iframe)
 }
