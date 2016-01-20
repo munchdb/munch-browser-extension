@@ -27,11 +27,9 @@ export function getSettings (domElement) {
 
 export function replaceLink(affiliateURL, replaceLinkSelector) {
   let anchors = document.querySelectorAll(replaceLinkSelector)
-  log(`Replacing cunt`)
   log(anchors)
   for (let anchor of anchors) {
     let href = anchor.href
-    log(`Replacing ${href}`)
     let uri = new URI(href)
     uri.addSearch('munchdb', true)
     let targetedAffiliateURL = affiliateURL.replace('{url}', encodeURIComponent(uri))
