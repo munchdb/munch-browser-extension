@@ -36,8 +36,8 @@ export function ready () {
   doLookup(site, lookupMap, renderResults)
 
   if (pathLookupFunc && !settings.disableAffiliate && siteModule.AFFILIATE_SUPPORT) {
-    let partialReplaceLink = partial(replaceLink, siteModule.AFFILIATE_URL)
-    siteModule.REPLACE_LINKS.map(partialReplaceLink)
+    // let partialReplaceLink = partial(replaceLink, siteModule.AFFILIATE_URL)
+    // siteModule.REPLACE_LINKS.map(partialReplaceLink)
   }
   return
 }
