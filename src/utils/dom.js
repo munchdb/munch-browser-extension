@@ -21,10 +21,3 @@ export function getSettings (domElement) {
   let settings = Object.assign({}, DEFAULT_SETTINGS, parsedSettings)
   return settings
 }
-
-export function trackingIframe (url) {
-  let iframe = document.createElement('iframe')
-  iframe.style.display = 'none'
-  iframe.src = url
-  document.body.appendChild(iframe)
-}

@@ -2,7 +2,7 @@ import * as sites from './sites'
 import {doLookup, trackVisit} from './munchClient'
 import {log} from './utils/log'
 import {renderResults} from './render'
-import {getSettings, injectBodyClass, trackingIframe} from './utils/dom'
+import {getSettings, injectBodyClass} from './utils/dom'
 import {partial} from './utils/functional'
 
 export function ready () {
@@ -35,7 +35,7 @@ export function ready () {
   doLookup(site, lookupMap, renderResults)
 
   if (pathLookupFunc && !settings.disableAffiliate && siteModule.AFFILIATE_SUPPORT) {
-    trackingIframe(siteModule.AFFILIATE_URL)
+    // Do affiliate code in future.
   }
   return
 }
