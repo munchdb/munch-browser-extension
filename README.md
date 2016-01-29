@@ -2,7 +2,7 @@
 
 Get food hygiene ratings on your favourite UK takeaway websites.
 
-Current released version: 0.10.1
+Current released version: 0.10.2
 
 This extension uses the service provided by us at [MunchDB.com][MunchDB] to
 display ratings from the [Food Standards Agency][FSA] on the following
