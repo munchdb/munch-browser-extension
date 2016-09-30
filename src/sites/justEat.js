@@ -20,7 +20,7 @@ function lookupAreaListings () {
   for (var anchor of restaurants) {
     let url = anchor.getAttribute('href')
     let slug = extractText(url, SLUG_REGEX).toLowerCase()
-    let element = anchor.querySelector('.o-tile__aside')
+    let element = anchor.querySelector('.o-tile__details')
     map.set(slug, element)
   }
   return map
