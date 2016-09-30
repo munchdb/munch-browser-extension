@@ -17,9 +17,9 @@
   },
   "homepage": "http://munchdb.com",
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-core": "^5.8.25",
-    "babel-loader": "^5.3.2",
+    "babel": "^5.8.38",
+    "babel-core": "^5.8.38",
+    "babel-loader": "^5.4.2",
     "crx": "^0.4.4",
     "event-stream": "*",
     "firefox-profile": "~0.3.6",
@@ -33,17 +33,17 @@
     "gulp-rename": "^1.2.0",
     "gulp-run": "^1.6.4",
     "gulp-run-sequence": "*",
-    "gulp-sass": "^2.0.4",
+    "gulp-sass": "^2.3.2",
     "gulp-util": "^2.2.20",
     "gulp-zip": "^2.0.1",
     "hogan.js": "^3.0.2",
     "map-stream": "*",
-    "request": "~2.48.0",
+    "request": "^2.48.0",
     "starx": "~0.1.7",
     "stream-series": "*",
     "underscore": "~1.7.0",
     "underscore.string": "~2.4.0",
-    "webpack": "^1.12.2",
-    "webpack-stream": "^2.1.1"
+    "webpack": "^1.13.2",
+    "webpack-stream": "^2.3.0"
   }
 }
