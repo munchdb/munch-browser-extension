@@ -12,13 +12,13 @@ const SLUG_REGEX = '/([a-zA-Z0-9-\.\'&\!]+)$'
 const AFFILIATE_SUPPORT = false
 
 function lookupAreaListings () {
-  const restaurants = document.querySelectorAll('.restaurant--details')
+  const restaurants = document.querySelectorAll('.restaurant-index-page-tile--anchor')
   const map = new Map()
 
   for (var element of restaurants) {
-    let url = element.querySelector('a').getAttribute('href')
+    let url = element.getAttribute('href')
     let slug = extractText(url, SLUG_REGEX)
-    let insertInside = element.querySelector('.list-item-inner')
+    let insertInside = element.querySelector('.restaurant-index-page-tile--anchor')
     map.set(slug, insertInside)
   }
   return map
