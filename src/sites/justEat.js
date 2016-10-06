@@ -13,13 +13,14 @@ export const AFFILIATE_SUPPORT = true
 export const AFFILIATE_URL = 'https://www.awin1.com/awclick.php?mid=2005&id=251923&clickref=munchdb-extension'
 
 function lookupAreaListings () {
-  const restaurants = document.querySelectorAll('.openRestaurants a')
+  const restaurants = document.querySelectorAll('.c-restaurant a')
+
   const map = new Map()
 
   for (var anchor of restaurants) {
     let url = anchor.getAttribute('href')
     let slug = extractText(url, SLUG_REGEX).toLowerCase()
-    let element = anchor.querySelector('.restaurantInner')
+    let element = anchor.querySelector('.o-tile__details')
     map.set(slug, element)
   }
   return map

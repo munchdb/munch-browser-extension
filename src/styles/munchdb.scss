@@ -115,18 +115,13 @@ $rating-pips: (
 
 /* For listings */
 
-.munchdb-just-eat .restaurantInner .munch-rating {
-  position: absolute;
-  top: 90px;
-  right: 18px;
+.munchdb-just-eat .munch-rating {
+  margin-top: 10px;
+
 }
 
-.munchdb-just-eat .restaurantInner .foodRatingImage {
-  display: none;
-}
-
-.munchdb-just-eat .restaurantInner .address {
-  width: 400px;
+.munchdb-just-eat .o-tile {
+  overflow: visible;
 }
 
 /* For restaurant pages */
