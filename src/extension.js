@@ -7,7 +7,6 @@ import {partial} from './utils/functional'
 
 export function ready () {
   log('Script loaded')
-  log('BOOOOOOO =[')
   let settingsElement = document.getElementById('munchdb-script')
   let settings = getSettings(settingsElement)
 

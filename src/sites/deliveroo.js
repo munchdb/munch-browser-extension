@@ -12,7 +12,6 @@ const SLUG_REGEX = '/([a-zA-Z0-9-\.\'&\!]+)$'
 const AFFILIATE_SUPPORT = false
 
 function lookupAreaListings () {
-  console.log("===============> lookupAreaListing");
   const restaurants = document.querySelectorAll('.restaurant--details')
   const map = new Map()
 
