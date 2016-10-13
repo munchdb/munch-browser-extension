@@ -18,16 +18,6 @@ It can run within the following desktop browsers:
 * [Mozilla Firefox][Firefox]
 * [Opera][Opera]
 
-# Revenue Disclosure
-
-This extension's development is supported by affiliate revenue paid
-for by the sites we support (see above). The only domains this extension
-runs on are the ones of the supported sites and we will never run on
-other domains. If you would like to stop supporting us with affiliate
-revenue then you can select an option to disable that functionality
-within the extensions panel of whichever browser you are using. The
-extension will continue to work as before. Thanks for your support &
-understanding.
 
 # Installation instructions
 
