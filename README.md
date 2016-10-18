@@ -33,6 +33,16 @@ It can run within the following desktop browsers:
 
 * Download and install from the [Opera Add-ons Store][Opera].
 
+
+# Distribution instructions
+
+To create a new package that can be uploaded to the Chrome store:
+
+1. Bump the project version: use `bumpversion patch` for fixes and `bumpversion major` for major releases.
+2. Run `gulp dist` to create a dist ready .zip file, it will be located in `dist/chrome.zip`
+3. Upload the new `chrome.zip` in the [Chrome developer dasboard](https://chrome.google.com/webstore/developer/)
+
+
 # License
 
 This code is free to use under a 3-clause BSD License, see [LICENSE][LICENSE].
