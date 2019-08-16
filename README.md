@@ -1,12 +1,14 @@
 # MunchDB Browser Extension
 
-Get food hygiene ratings on your favourite UK takeaway websites.
+Display restaurant food hygiene ratings on your favourite UK takeaway websites.
+
+---
+**DEPRECATED**: MunchDB has been turned off as its goal was met: most of the sites in question now list food hygeine ratings alongside the restaurant data. This repository will remain here to showcase how to build a cross browser extension with ES6. Thanks for your support!
+---
 
 Current released version: 0.10.4
 
-This extension uses the service provided by us at [MunchDB.com][MunchDB] to
-display ratings from the [Food Standards Agency][FSA] on the following
-domains:
+This extension uses the service provided by us at [MunchDB.com][MunchDB] to display ratings from the [Food Standards Agency][FSA] on the following domains:
 
 * JUSTEAT > [just-eat.co.uk][JUSTEAT]
 * Hungryhouse > [hungryhouse.co.uk][Hungryhouse]
