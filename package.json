@@ -41,7 +41,7 @@
     "request": "^2.48.0",
     "starx": "~0.1.7",
     "stream-series": "*",
-    "underscore": "~1.7.0",
+    "underscore": "~1.12.1",
     "underscore.string": "~2.4.0",
     "webpack": "^1.13.2",
     "webpack-stream": "^2.3.0"
